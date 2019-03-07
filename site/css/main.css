@@ -198,7 +198,7 @@ a{
 
 .wrappervaror{    
     display: grid;
-    grid-template-rows: 70px auto 140px;     
+    grid-template-rows: 70px auto 100px;     
     background-color: rgb(92, 92, 92);
 }
 
@@ -249,20 +249,103 @@ a{
     justify-content: center;
     align-items: center;
     grid-area: tabort;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .produktbiiild{
     background-color: rgba(255, 255, 255, 0.2);
     grid-area: bild;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
 }
 
+.rabbatkod{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
+.rabbich{
+    height: 80%;
+    color: white;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
+.rabbattext{
+    position: relative;
+    top: 10px;
+    left: 11px;
+    font-size: 22px;
+}
 
+.rabbatskriv{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 50px;
+    width: 220px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
+.aktiveratext{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    position: relative;
+    top: -32px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 262px;
+    height: 50px;
+    width: 85px;
+    background-color: rgba(0, 0, 0, 0.6);
 
+}
+
+.attbetala{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    height: 145px;
+    display: grid;
+    padding-left: 30px;
+    padding-top: 10px;
+    grid-template-rows: 1fr 1fr 1fr 70px; 
+    padding-bottom: 20px;
+}
+
+.betalknapp{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+    width: 312px;
+    /* margin-bottom: 20px; */
+}
+
+.contentboss{
+    display: grid;
+    grid-template-rows: 220px 220px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 17px;
+    padding-left: 16px;
+    padding-right: 17px;
+    padding-top: 8px;
+}
 
 
 
