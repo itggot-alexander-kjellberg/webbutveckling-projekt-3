@@ -1,0 +1,307 @@
+/* Mobil */
+@media only screen and (min-width : 1px){
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(92, 92, 92);
+}
+
+.wrapperindex{
+    display: grid;
+    grid-template-rows: 70px auto 140px;     
+    background-color: rgb(92, 92, 92);
+
+}
+
+header{
+    display: flex;
+    background:url(../img/headerbackground@381x70.jpg);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+header:nth-child(3){
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.burger{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.search{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo{
+    margin-top: 10px;
+    padding-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 4px 4px 5px;
+    height: 43px;
+    width: 160px;
+}
+/* i kundkorg ha onclick att border-style: inset; i en millisekund */
+.kundkorg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    color: white;
+}
+
+.mainindex{
+    display: grid;
+    grid-template-rows: 220px 220px 220px 200px 220px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "erbju erbju"
+    "cont cont2"
+    "con4 cont5"
+    "erbju2 erbju2"
+    "contich contich6";
+    grid-column-gap: 17px;
+    padding-left: 16px;
+    padding-right: 17px;
+    padding-top: 8px;
+
+}
+
+.contenttext{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 17px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 150px 53px;
+    color: white;
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 5;
+}
+
+.texten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.erbjudande{
+    background-color: rgba(255, 255, 255, 0.2);
+    grid-area: erbju;
+
+
+}
+
+.erbjudande2{
+    background-color: rgba(255, 255, 255, 0.2);
+    grid-area: erbju2;
+    margin-top: 17px;
+    
+}
+
+header a{
+    color: white;
+}
+
+header a:visited{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenttext2{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    margin-top: 17px;
+    height: 203px;
+    display: grid;
+    grid-template-rows: 150px 53px; 
+}
+
+.nunna{
+    display: none;
+}
+
+
+.utfallsdburger{
+    background-color: turquoise;
+    height: 100vh;
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+.underkat{
+    margin-left: 15px;
+    margin-top: 2px;
+    display: none;
+}
+
+.showUnderkat{
+    display: block;
+}
+
+.rubrikich{
+    padding-top: 5px;  
+    
+}
+
+.rubrikich2{
+    padding-top: 5px;      
+}
+
+.footerindex{
+    background-color: peachpuff;
+    margin-top: 80px;
+    height: 200px;
+}
+
+.wrappervaror{    
+    display: grid;
+    grid-template-rows: 70px auto 140px;     
+    background-color: rgb(92, 92, 92);
+}
+
+.footervaror{
+    background-color: peachpuff;
+    /* margin-top: 80px; */
+    height: 200px;
+}
+
+.kundkorgrubrik{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.produkten{
+    height: 220px;
+    display: grid;    
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-template-columns: 120px auto;
+    grid-template-rows: 160px 40px;
+    grid-template-areas: 
+    "bild text"
+    "bild tabort"
+    ;
+    grid-column-gap: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.mertext{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.groda{
+    margin-bottom: 10px;
+}
+
+.tabortvara{
+    /* height: 40px; */
+    width: 100px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    grid-area: tabort;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.produktbiiild{
+    background-color: rgba(255, 255, 255, 0.2);
+    grid-area: bild;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/* Desktop */
+@media only screen and (min-width : 900px){
+
+
+
+}
