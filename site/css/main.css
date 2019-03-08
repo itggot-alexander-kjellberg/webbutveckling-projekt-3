@@ -91,6 +91,9 @@ header:nth-child(3){
 }
 
 .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 5;
 }
