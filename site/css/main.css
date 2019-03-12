@@ -1,12 +1,12 @@
-/* Mobil */
-@media only screen and (min-width : 1px){
-
 body{
     margin: 0;
     height: 100vh;
     width: 100vw;
     background-color: rgb(92, 92, 92);
 }
+
+/* Mobil */
+@media only screen and (min-width : 1px){
 
 .wrapperindex{
     display: grid;
@@ -457,8 +457,29 @@ a{
     
 }
 
+.mainabout{
+    display: grid;
+    grid-template-rows: 220px 140px;
+    grid-row-gap: 15%;
+    margin: 8% 8% 170px 8%;
+}
 
+.bildabout{
+    display: flex;
+    justify-content: center;
+}
 
+.textabout{
+    background-color: rgba(255, 255, 255, 0.1);
+    word-spacing: 2px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    text-align: justify;
+    font-weight: bold;
+    color: white;
+}
 
 
 
@@ -494,5 +515,64 @@ a{
 
 /* Desktop */
 @media only screen and (min-width : 900px){
+
+.wrapperindex{
+    margin-top: 90px;
+    grid-template-rows: 80px auto 200px;
+    grid-template-areas: 
+    "huvve"
+    "desktopmain"
+    "desktopfooter"
+    ;
+
+}
+
+.mainindex{
+    grid-template-rows: 330px 330px 330px 330px 330px;
+    grid-area: desktopmain;
+}
+
+.footerindex{
+    grid-area: desktopfooter;
+}
+
+.contenttext{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 17px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 260px 53px;
+    color: white;
+}
+
+.nunna{
+    display: block;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+}
+
+.burger{
+    display: none;
+}
+
+.utfallsdburger{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    top: 80px;
+    z-index: 80;
+    padding: 0;
+}
+
+
 
 }
