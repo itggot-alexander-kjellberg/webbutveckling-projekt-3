@@ -521,7 +521,6 @@ a{
     "desktopmain"
     "desktopfooter"
     ;
-
 }
 
 .mainindex{
@@ -591,7 +590,7 @@ header{
     z-index: 100;
     height: 80px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .burger{
@@ -623,6 +622,29 @@ header{
     align-items: center;
 }
 /* DETTA ÄR ETT STORT FRÅGETECKEN */
+
+
+.search{
+    width: 100px;
+}
+
+.search i{
+    font-size: 3rem;
+}
+
+.kundkorg{
+    margin: 0;
+    width: 100px;
+}
+
+.kundkorg i{
+    font-size: 3rem;
+}
+
+.takeaway{
+    display: none;
+}
+
 .utfallsdburger{
     width: 100%;
     position: fixed;
@@ -651,5 +673,62 @@ header{
 .contenttext2{
     display: none;
 }
+
+.wrapperabout{  
+    margin-top: 200px;
+    grid-template-rows: auto 200px;
+    grid-template-areas: 
+    "desktopmain"
+    "desktopfooter"
+    ;
+}
+
+.mainabout{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 12% 170px 12%;
+}
+
+.bildabout{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.textabout{
+    padding: 4px 35px 0 35px;
+    text-align: left;
+    width: 380px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.tabortidesktop{
+    display: none;
+}
+
+.wrapperbyxa{  
+    margin-top: 140px;
+    grid-template-rows: auto 200px;
+    grid-template-areas: 
+    "desktopmain"
+    "desktopfooter"
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
