@@ -107,8 +107,8 @@ header:nth-child(3){
 .erbjudande{
     background-color: rgba(255, 255, 255, 0.2);
     grid-area: erbju;
-
-
+    display: flex;
+    justify-content: center;
 }
 
 .erbjudande2{
@@ -454,7 +454,6 @@ a{
     background-color: peachpuff;
     /* margin-top: 80px; */
     height: 200px;
-    
 }
 
 .mainabout{
@@ -506,7 +505,6 @@ a{
 
 
 
-
 }
 
 
@@ -517,10 +515,9 @@ a{
 @media only screen and (min-width : 900px){
 
 .wrapperindex{  
-    margin-top: 90px;
-    grid-template-rows: 80px auto 200px;
+    margin-top: 160px;
+    grid-template-rows: auto 200px;
     grid-template-areas: 
-    "huvve"
     "desktopmain"
     "desktopfooter"
     ;
@@ -528,8 +525,47 @@ a{
 }
 
 .mainindex{
-    grid-template-rows: 330px 330px 330px 330px 330px;
     grid-area: desktopmain;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+}
+
+.stora{
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.lilla{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    width: 67%;
+    /* background-color: green; */
+    margin-top: 22px;
+}
+
+.contenttextdesktop{
+    height: 100%;
+    width: 300px;
+    background-color: blue; 
+}
+
+.reklambanner{
+    height: 250px;
+    width: 96%;
+    margin-top: 22px;
+    background-color: darkcyan;
+}
+
+.marran{
+    margin-top: 22px;
 }
 
 .footerindex{
@@ -561,11 +597,38 @@ header{
 .burger{
     display: none;
 }
+/* DETTA ÄR ETT STORT FRÅGETECKEN */
+/* Hur ska jag göra för att kategoriknappen ska bli nice? */
+.underkat{
+    background-color: gray;
+}
 
+.fyllnad{
+    width: 25%;
+}
+
+.flexxa{
+    display: flex;
+    flex-direction: row;
+}
+
+.showUnderkat{
+    position: relative;
+    top: 40px;
+}
+
+.rubrikich2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* DETTA ÄR ETT STORT FRÅGETECKEN */
 .utfallsdburger{
     width: 100%;
     position: fixed;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     height: 60px;
     top: 80px;
@@ -573,6 +636,20 @@ header{
     padding: 0;
 }
 
+.erbjudande{
+    display: none;
+}
 
+.contenttext{
+    display: none;
+}
+
+.erbjudande2{
+    display: none;
+}
+
+.contenttext2{
+    display: none;
+}
 
 }
