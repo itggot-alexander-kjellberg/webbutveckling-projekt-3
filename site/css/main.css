@@ -1,7 +1,6 @@
 body{
     margin: 0;
     height: 100vh;
-    width: 100vw;
     background-color: rgb(92, 92, 92);
 }
 
@@ -184,6 +183,10 @@ a{
     display: block;
 }
 
+.tabortimobile{
+    display: none;
+}
+
 .rubrikich{
     padding-top: 5px;  
     
@@ -207,7 +210,6 @@ a{
 
 .footervaror{
     background-color: peachpuff;
-    /* margin-top: 80px; */
     height: 200px;
 }
 
@@ -322,7 +324,8 @@ a{
 .attbetala{
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    height: 145px;
+    height: 148px;
+    width: 351px;
     display: grid;
     padding-left: 30px;
     padding-top: 10px;
@@ -337,7 +340,6 @@ a{
     align-items: center;
     font-size: 30px; 
     width: 312px;
-    /* margin-bottom: 20px; */
 }
 
 .contentboss{
@@ -360,14 +362,12 @@ a{
     display: grid;
     grid-template-rows: 370px 120px 110px;
     background-color: rgba(255, 255, 255, 0.2);
-
 }
 
 .bildpaprodukten{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 .fergex{
@@ -452,7 +452,6 @@ a{
 
 .footerabout{
     background-color: peachpuff;
-    /* margin-top: 80px; */
     height: 200px;
 }
 
@@ -528,6 +527,7 @@ a{
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -537,7 +537,6 @@ a{
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    /* background-color: red; */
 }
 
 .lilla{
@@ -546,13 +545,15 @@ a{
     justify-content: space-between;
     height: 250px;
     width: 67%;
-    /* background-color: green; */
     margin-top: 22px;
 }
 
 .contenttextdesktop{
     height: 100%;
     width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: blue; 
 }
 
@@ -596,10 +597,9 @@ header{
 .burger{
     display: none;
 }
-/* DETTA ÄR ETT STORT FRÅGETECKEN */
-/* Hur ska jag göra för att kategoriknappen ska bli nice? */
+
 .underkat{
-    background-color: gray;
+    color: white;
 }
 
 .fyllnad{
@@ -621,8 +621,6 @@ header{
     justify-content: center;
     align-items: center;
 }
-/* DETTA ÄR ETT STORT FRÅGETECKEN */
-
 
 .search{
     width: 100px;
@@ -715,6 +713,102 @@ header{
     "desktopmain"
     "desktopfooter"
     ;
+}
+
+.mainbyxa{
+    margin-top: 40px;
+    grid-template-rows: 150px 70px 260px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titleopris produkten altfarger"
+    "projsa produkten altfarger"
+    "nej produkten altfarger"
+    ;
+    grid-row-gap: 40px;
+    background-color: transparent;
+}
+
+.tabortimobile{
+    display: block;
+}
+
+.ex{
+    margin-left: 160px;
+    width: 120px;
+    height: 130px;
+}
+
+.bildpaprodukten{
+    grid-area: produkten;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.kopich{
+    grid-template-columns: 1fr 1fr;
+    background-color: transparent;
+    padding-left: 0;
+    grid-template-rows: 1fr 2fr;
+    grid-area: titleopris;
+    grid-template-areas: 
+    "tett ttva"
+    "size size"
+    ;
+}
+
+.fergex{
+    grid-area: altfarger;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.paron{
+    grid-area: size;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.size{
+    height: 80%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.varunamn{
+    padding-left: 50px;
+    font-size: 2rem;
+}
+
+.varunamn:nth-child(2){
+    padding-left: 105px;
+}
+
+.desktoplaggikorg{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.centerparon{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.katsammlare{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 39%;
 }
 
 
