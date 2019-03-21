@@ -241,6 +241,7 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
+    font-size: 20px;
 }
 
 .groda{
@@ -390,6 +391,7 @@ a{
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    overflow: hidden;
 }
 
 .kopich{
@@ -827,14 +829,25 @@ header{
 .prolle{
     background-color: red;
     position: absolute;
+    border: 1px solid black;
     top: 25%;
     left: 10%;
     height: 200px;
     width: 500px;
+    display: grid;
+    grid-template-rows: ;
+    grid-template-columns: 1fr 2fr;
+
 }
 
+.prollebild{
+    width: 200px;
+}
+
+
+
 .kopkop{
-    height: 564px;
+    height: 563.8px;
     width: 460px;
     background-color: transparent;
     position: absolute;
@@ -853,6 +866,7 @@ header{
     padding-left: 13px;
     align-items: center;
     font-size: 2rem;
+    border: 1px solid black;
 }
 
 .rabbatkodtva{
@@ -861,12 +875,16 @@ header{
 }
 
 .coooontainneeeerrr{
+    height: 110px;
     background-color: gray;
+    border: 1px solid black;
 }
 
 .produkten{
     height: auto;
     display: flex;
+    border: 1px solid black;
+    border-style: solid solid none solid; 
     background-color: orange;
     padding-left: 0;
     padding-top: 0;
