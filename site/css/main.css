@@ -15,7 +15,7 @@ body{
 
 header{
     display: flex;
-    background:url(../img/headerbackground@381x70.jpg);
+    background:url(../img/headerdesktop@1500x80.jpg);
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -322,6 +322,10 @@ a{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.rabbatskriv:hover{
+    cursor: wait;
+}
+
 .aktiveratext{
     border-style: solid;
     border-width: 1px;
@@ -590,6 +594,7 @@ a{
     align-items: center;
     background-color: #00E0D9; 
     border: 1px solid black;
+    cursor: context-menu;
 }
 
 .contenttextdesktop:hover{
@@ -735,7 +740,6 @@ header{
 .bildabout{
     width: 500px;
     height: 500px;
-    background-color: black;
 }
 
 .textabout{
@@ -775,6 +779,13 @@ header{
 
 .tabortimobile{
     display: block;
+}
+
+.kitkat{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tabortimobile2{
@@ -862,6 +873,7 @@ header{
 }
 
 .wrappervaror{  
+    cursor: context-menu;
     margin-top: 180px;
     grid-template-rows: 500px 200px;
     grid-template-columns: 40% 40%;
