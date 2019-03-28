@@ -15,7 +15,7 @@ body{
 
 header{
     display: flex;
-    background:url(../img/headerdesktop@1500x80.jpg);
+    background:url(../img/headerbackground@381x70.jpg);
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -499,7 +499,6 @@ a{
 .bildabout{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .textabout{
@@ -644,6 +643,7 @@ header{
     height: 80px;
     width: 100%;
     justify-content: space-between;
+    background:url(../img/headerdesktop@1500x80.jpg);
 }
 
 .burger{
@@ -743,6 +743,8 @@ header{
 .bildabout{
     width: 500px;
     height: 500px;
+    border: 1px solid black;
+    
 }
 
 .textabout{
