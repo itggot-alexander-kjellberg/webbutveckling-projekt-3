@@ -499,6 +499,7 @@ a{
 .bildabout{
     display: flex;
     justify-content: center;
+    border: 1px solid black;
 }
 
 .textabout{
@@ -511,6 +512,7 @@ a{
     text-align: justify;
     font-weight: bold;
     color: white;
+    border: 1px solid black;
 }
 
 .footercont{
@@ -607,6 +609,7 @@ a{
     margin-top: 22px;
     border: 1px solid black;
     background-color: darkcyan;
+    overflow: hidden;
 }
 
 .reklambanner:hover{
