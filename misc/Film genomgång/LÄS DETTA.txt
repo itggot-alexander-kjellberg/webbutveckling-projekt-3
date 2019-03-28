@@ -1,0 +1,3 @@
+Användas + inspelning = Filmen + Ljudet.
+
+Fick det aldrig till att fungera så det får bli såhär osmidigt, hoppas att det fungerar ändå.
