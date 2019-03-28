@@ -1,7 +1,6 @@
 body{
     margin: 0;
-    height: 100vh;
-    background-color: rgb(92, 92, 92);
+    background-color: #3B6160;
 }
 
 /* Mobil */
@@ -10,7 +9,7 @@ body{
 .wrapperindex{
     display: grid;
     grid-template-rows: 70px auto 140px;     
-    background-color: rgb(92, 92, 92);
+    background-color: #3B6160;
 
 }
 
@@ -95,6 +94,11 @@ header:nth-child(3){
     align-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 5;
+    border: 1px solid black;
+}
+
+.content:hover{
+    background-color: rgba(7, 233, 226, 0.605);
 }
 
 .texten{
@@ -108,12 +112,14 @@ header:nth-child(3){
     grid-area: erbju;
     display: flex;
     justify-content: center;
+    border: 1px solid black;
 }
 
 .erbjudande2{
     background-color: rgba(255, 255, 255, 0.2);
     grid-area: erbju2;
     margin-top: 17px;
+    border: 1px solid black;
     
 }
 
@@ -145,10 +151,10 @@ a{
 
 
 .utfallsdburger{
-    background-color: turquoise;
+    background-color: #00ADA8;
     height: 100vh;
     width: 230px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 20;
@@ -197,20 +203,31 @@ a{
 }
 
 .footerindex{
-    background-color: peachpuff;
+    background-color: #00615E;
     margin-top: 80px;
     height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .wrappervaror{    
     display: grid;
     grid-template-rows: 70px auto 100px;     
-    background-color: rgb(92, 92, 92);
+    background-color: #3B6160;
 }
 
 .footervaror{
-    background-color: peachpuff;
+    background-color: #00615E;
+    border: 1px solid black;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .kundkorgrubrik{
@@ -287,6 +304,7 @@ a{
 
 .rabbattext{
     position: relative;
+    color: white;
     top: 10px;
     left: 11px;
     font-size: 22px;
@@ -356,7 +374,7 @@ a{
 .wrapperbyxa{
     display: grid;
     grid-template-rows: 70px auto;     
-    background-color: rgb(92, 92, 92);
+    background-color: #3B6160;
 }
 
 .mainbyxa{
@@ -379,7 +397,7 @@ a{
 }
 
 .ex:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.2)
+    background-color: rgba(80, 211, 207, 0.666);
 }
 
 .ex{
@@ -387,7 +405,7 @@ a{
     margin-left: 20px;
     margin-right: 20px;
     width: 80px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #00E0D9;
     border-style: solid;
     border-width: 1px;
     border-color: black;
@@ -442,9 +460,14 @@ a{
 }
 
 .footerbyxa{
-    background-color: peachpuff;
+    background-color: #00615E;
     margin-top: 80px;
+    border: 1px solid black;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapperabout{
@@ -453,8 +476,13 @@ a{
 }
 
 .footerabout{
-    background-color: peachpuff;
+    background-color: #00615E;
+    border: 1px solid black;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainabout{
@@ -481,6 +509,10 @@ a{
     color: white;
 }
 
+.footercont{
+    font-size: 20px;
+    color: white;
+}
 
 
 
@@ -556,14 +588,24 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue; 
+    background-color: #00E0D9; 
+    border: 1px solid black;
+}
+
+.contenttextdesktop:hover{
+    background-color: rgba(7, 233, 226, 0.605); 
 }
 
 .reklambanner{
     height: 250px;
     width: 96%;
     margin-top: 22px;
+    border: 1px solid black;
     background-color: darkcyan;
+}
+
+.reklambanner:hover{
+    background-color: rgba(0, 139, 139, 0.66);
 }
 
 .marran{
@@ -647,6 +689,7 @@ header{
 
 .utfallsdburger{
     width: 100%;
+    color: white;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -734,6 +777,10 @@ header{
     display: block;
 }
 
+.tabortimobile2{
+    display: flex;
+}
+
 .ex{
     margin-left: 160px;
     width: 120px;
@@ -742,7 +789,7 @@ header{
 
 .bildpaprodukten{
     grid-area: produkten;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #00E0D9;
     border-style: solid;
     border-width: 1px;
 }
@@ -827,7 +874,7 @@ header{
 }
 
 .prolle{
-    background-color: red;
+    background-color: #00615E;
     position: absolute;
     border: 1px solid black;
     top: 25%;
@@ -842,7 +889,10 @@ header{
 
 .prollebild{
     width: 200px;
+    background-color: #00E0D9;
+    overflow: hidden;
 }
+
 
 
 
@@ -859,7 +909,7 @@ header{
 }
 
 .korgen{
-    background-color: red;
+    background-color: #00615E;
     height: 100px;
     color: white;
     display: flex;
@@ -871,12 +921,13 @@ header{
 
 .rabbatkodtva{
     height: 100px;
-    background-color: orange;
+    background-color: #00615E;
+    
 }
 
 .coooontainneeeerrr{
     height: 110px;
-    background-color: gray;
+    background-color: #00615E;
     border: 1px solid black;
 }
 
@@ -885,7 +936,7 @@ header{
     display: flex;
     border: 1px solid black;
     border-style: solid solid none solid; 
-    background-color: orange;
+    background-color: #00615E;
     padding-left: 0;
     padding-top: 0;
 }
@@ -896,15 +947,20 @@ header{
     margin-bottom: 40px;
 }
 
+.behallllllare{
+    color: white;
+}
+
 .grodbehollare{
     display: flex;
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
+
 }
 
 .betalknapptva{
-    background-color: greenyellow;
+    background-color: #51E5E1;
     display: flex;
     color: white;
     height: 100px;
@@ -915,10 +971,14 @@ header{
     width: auto;
 }
 
+.prnamn{
+    font-size: 2rem;
+    margin: 10px 0 20px 40px;
+}
 
-
-
-
+a{
+    color: white;
+}
 
 
 
