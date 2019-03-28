@@ -894,7 +894,6 @@ header{
     height: 200px;
     width: 500px;
     display: grid;
-    grid-template-rows: ;
     grid-template-columns: 1fr 2fr;
 
 }
